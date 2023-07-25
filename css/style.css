@@ -1,0 +1,214 @@
+@font-face {
+  font-family: Player; /* 사용하고 싶은 font-family명을 지정 */
+  src: url("../assets/fonts/IAMAPLAYER.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+@font-face {
+  font-family: SCDream;
+  src: url("../assets/fonts/SCDream4.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-display: swap;
+  src: local("Pretendard Black"),
+    url("../assets/fonts/Pretendard-Black.subset.woff2") format("woff2"),
+    url("../assets/fonts/Pretendard-Black.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-display: swap;
+  src: local("Pretendard ExtraBold"),
+    url("../assets/fonts/Pretendard-ExtraBold.subset.woff2") format("woff2"),
+    url("../assets/fonts/Pretendard-ExtraBold.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"),
+    url("../assets/fonts/Pretendard-Bold.subset.woff2") format("woff2"),
+    url("../assets/fonts/Pretendard-Bold.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"),
+    url("../assets/fonts/Pretendard-SemiBold.subset.woff2") format("woff2"),
+    url("../assets/fonts/Pretendard-SemiBold.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"),
+    url("../assets/fonts/Pretendard-Medium.subset.woff2") format("woff2"),
+    url("../assets/fonts/Pretendard-Medium.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"),
+    url("../assets/fonts/Pretendard-Regular.subset.woff2") format("woff2"),
+    url("../assets/fonts/Pretendard-Regular.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"),
+    url("../assets/fonts/Pretendard-Light.subset.woff2") format("woff2"),
+    url("../assets/fonts/Pretendard-Light.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-display: swap;
+  src: local("Pretendard ExtraLight"),
+    url("../assets/fonts/Pretendard-ExtraLight.subset.woff2") format("woff2"),
+    url("../assets/fonts/Pretendard-ExtraLight.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"),
+    url("./assets/woff2-subset/Pretendard-Thin.subset.woff2") format("woff2"),
+    url("./woff-subset/Pretendard-Thin.subset.woff") format("woff");
+}
+
+* {
+  /* font-family: "Noto Sans KR", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-size: medium;
+  /* font-family: "Orbit", sans-serif; */
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  /* font-family: SCDream; */
+  /* font-family: Player, IAMAPLAYER; */
+
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  font-color: #202020;
+}
+
+/* f3f7fb */
+
+header {
+  margin: 0 auto;
+  padding: 10px auto;
+  background: #cfe4fa;
+}
+
+nav {
+  padding: 0 160px;
+  height: 60px;
+}
+
+header ul {
+  line-height: 60px;
+}
+
+header img {
+  float: left;
+  margin: 10px 30px 0 0;
+  line-height: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin: 0 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+nav li a {
+  text-decoration: none !important;
+  color: black;
+}
+
+ul:last-child {
+  float: right;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #cfe4fa, white);
+}
+
+section {
+  padding: 10px 160px;
+  height: 600px;
+  text-align: center;
+}
+
+.main h2:after {
+  width: 10px;
+  border-bottom: solid 1px black;
+}
+
+.main h1 {
+  margin: 200px 0 50px 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main h2 {
+  color: #4a4b5e;
+  margin: 30px auto;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+hr {
+  margin: 10px auto;
+  width: 120px;
+}
+
+.book_list {
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.book_list h1 {
+  font-family: "Pretendard";
+  width: max-content;
+  margin: 20px auto;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.book_card {
+  margin: 20px 10px;
+  padding: 20px 0;
+}
+
+.book_card_wrapper {
+  margin: 20px auto;
+  padding: 10px;
+}
