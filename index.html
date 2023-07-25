@@ -5,25 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="js/main.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Orbit&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <header>
+      <nav>
+        <a href="/index.html"
+          ><img src="/images/logo.png" width="123px" height="40px"
+        /></a>
+        <ul>
+          <li><a href="/bookList.html">도서 목록</a></li>
+          <li><a href="thisWeek.html">이번 주 모임</a></li>
+          <li><a href="voteForMeeting.html">모임 날짜 투표</a></li>
+        </ul>
+        <ul>
+          <li>로그인</li>
+          <li>회원가입</li>
+        </ul>
+      </nav>
+    </header>
     <div id="container">
-      <header>
-        <nav>
-          <img src="/images/logo1.png" width="180px" height="61px" />
-          <ul>
-            <li>도서 목록</li>
-            <li>이번 주 모임</li>
-            <li>모임 날짜 투표</li>
-          </ul>
-          <ul>
-            <li>로그인</li>
-            <li>회원가입</li>
-          </ul>
-        </nav>
-      </header>
+      <section class="main">
+        <h1>READER, LEADER, GIVER</h1>
+        <h2>
+          책을 읽으며 각자 삶의 리더가 됩니다. <br />함께 나누는 “GIVER”가
+          됩니다.
+        </h2>
+      </section>
+      <hr />
+      <section class="book_list">
+        <h1>지금까지의 활동 살펴보기</h1>
+        <grid class="book_card_wrapper">
+          <img
+            class="book_card"
+            src="/images/부의추월차선.jpeg"
+            width="230"
+            height="350"
+          />
+
+          <img
+            src="/images/생각한다는착각.jpeg"
+            class="book_card"
+            width="230"
+            height="350"
+          />
+          <img
+            src="/images/혼자있는시간의힘.jpeg"
+            class="book_card"
+            width="230"
+            height="350"
+          />
+        </grid>
+      </section>
+      <footer></footer>
     </div>
   </body>
 </html>
