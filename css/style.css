@@ -1,3 +1,11 @@
+@media screen and (max-wdith: 320px) {
+  //가로가 320px이하인 모바일 환경
+}
+
+@media screen and (max-width: 540px) and (min-width: 360px) {
+  //360-540px : tablet
+}
+
 @font-face {
   font-family: Player; /* 사용하고 싶은 font-family명을 지정 */
   src: url("../assets/fonts/IAMAPLAYER.otf") format("opentype"); /* 폰트파일 불러오기 */
@@ -113,6 +121,7 @@ body {
 /* f3f7fb */
 
 header {
+  height: 60px;
   margin: 0 auto;
   padding: 10px auto;
   background: #cfe4fa;
@@ -124,7 +133,6 @@ nav {
 }
 
 header ul {
-  line-height: 60px;
 }
 
 header img {
@@ -135,20 +143,52 @@ header img {
 
 ul {
   list-style: none;
+  line-height: 60px;
 }
 
-li {
+nav li {
   float: left;
   margin: 0 10px;
-  padding: 5px;
   font-size: 15px;
+}
+/* nav .left_nav {
+  transition-property: border-bottom;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+} */
+
+nav .left_nav {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+nav .left_nav::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+nav .left_nav:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 nav li a {
   text-decoration: none !important;
+  margin: 10px 0;
   color: black;
 }
 
+nav li a:hover {
+}
 ul:last-child {
   float: right;
 }
@@ -211,4 +251,8 @@ hr {
 .book_card_wrapper {
   margin: 20px auto;
   padding: 10px;
+}
+
+.book_list img {
+  border-radius: 15px;
 }
