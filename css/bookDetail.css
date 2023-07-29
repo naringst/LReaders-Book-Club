@@ -1,0 +1,25 @@
+#pre_list_wrapper {
+  border: 1px solid black;
+  width: 1120px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1020px);
+  grid-template-rows: minmax(310px, auto);
+  grid-column-gap: 20px;
+  grid-column-start: 1;
+  grid-row: 1/2;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin: 20px 0;
+  justify-content: space-between;
+  color: #0c3b5e;
+}
