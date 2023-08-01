@@ -288,3 +288,37 @@ footer {
   text-decoration: none;
   border-radius: 5px;
 }
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+  width: 1120px;
+  height: max-content;
+  margin: 20px auto;
+  padding: 20px 70px;
+  align-items: center;
+  border: 1px solid #dbe5f0;
+  background: rgba(253, 253, 253, 0.3);
+  border-radius: 10px;
+  outline-color: #dbe5f0;
+  outline-style: solid;
+  outline-offset: 5px;
+  outline-width: 2px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: max-content;
+  margin: 20px auto;
+  padding: 20px 70px;
+  align-items: center;
+  border: 1px solid #dbe5f0;
+  background: rgba(253, 253, 253, 0.3);
+  border-radius: 10px;
+  outline-color: #dbe5f0;
+  outline-style: solid;
+  outline-offset: 5px;
+  outline-width: 2px;
+}
