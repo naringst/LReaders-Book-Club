@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Orbit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <form>
+      <fieldset id="container">
+        <a class="logo" href="/index.html"
+          ><img src="/images/newlogo.png" width="140px" height="62px"
+        /></a>
+
+        <ul id="signin">
+          <li>
+            <label for="user-email">이메일</label>
+            <input
+              id="user-email"
+              name="user-email"
+              type="email"
+              required
+              autofocus
+            />
+          </li>
+          <li>
+            <label for="username">이름</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              required
+              autofocus
+            />
+          </li>
+          <li>
+            <label for="nickname">닉네임</label>
+            <input
+              id="nickname"
+              name="nickname"
+              type="text"
+              required
+              autofocus
+            />
+          </li>
+          <li>
+            <label for="pwd1">비밀번호</label>
+            <input id="pwd1" name="pwd1" type="password" required />
+          </li>
+          <li>
+            <label for="pwd2">비밀번호 확인</label>
+            <input id="pwd2" name="pwd2" type="password" required />
+          </li>
+        </ul>
+
+        <button type="submit">가입하기</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
