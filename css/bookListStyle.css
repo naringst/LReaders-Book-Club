@@ -305,6 +305,7 @@ footer {
   outline-offset: 5px;
   outline-width: 2px;
 }
+
 .big-card-row-flex {
   display: flex;
   width: 1120px;
@@ -357,4 +358,21 @@ footer {
   outline-style: solid;
   outline-offset: 5px;
   outline-width: 2px;
+}
+
+.button-box {
+  margin: 20px auto;
+  width: max-content;
+  display: flex;
+}
+
+.button-box button {
+  margin: 10px;
+  border-radius: 10px;
+  width: 140px;
+  height: 44px;
+  background: #cfe4fa;
+  line-height: 44px;
+  border: none;
+  vertical-align: center;
 }
